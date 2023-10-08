@@ -4,6 +4,7 @@
 # export AWS_SECRET_ACCESS_KEY=""
 # export AWS_REGION=""
 
+
 # Define the path to your .tfvars file
 TFVARS_FILE="./init.tfvars"
 
@@ -38,6 +39,7 @@ fi
 write_tfvar "aws_access_key" "$AWS_ACCESS_KEY_ID"
 write_tfvar "aws_secret_key" "$AWS_SECRET_ACCESS_KEY"
 write_tfvar "region" "$AWS_REGION"
+
 # Add more variables as needed
 
 echo "Terraform .tfvars file updated successfully."
